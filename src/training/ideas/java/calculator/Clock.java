@@ -14,6 +14,7 @@ public class Clock {
         if(hour>=12){
             inHours=inHours-12;
         }
+
         double minuteHandDistanceFrom0=minutes*MINUTE_HAND_DEGREES_PER_MINUTE;
         double hourHandDistanceFrom0=inHours*HOUR_HAND_DEGREES_PER_HOUR + HOUR_HAND_DEGREES_PER_MINUTE*minutes;
         if(hourHandDistanceFrom0 > minuteHandDistanceFrom0){
